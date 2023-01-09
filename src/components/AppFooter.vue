@@ -25,10 +25,18 @@
             </div>
         </div>
 
-        <img src="../assets/images/dc-logo-bg.png" alt="">
+        <img src="../assets/images/dc-logo-bg.png" alt="dc-logo">
 
         <div class="join-us-banner">
-
+            <button>sign-up now!</button>
+            <div class="social-networks">
+                <h3>follow us</h3>
+                <img src="../assets/images/footer-facebook.png" alt="facebook-logo">
+                <img src="../assets/images/footer-twitter.png" alt="twitter-logo">
+                <img src="../assets/images/footer-youtube.png" alt="youtube-logo">
+                <img src="../assets/images/footer-pinterest.png" alt="pinterest-logo">
+                <img src="../assets/images/footer-periscope.png" alt="periscope-logo">
+            </div>
         </div>
     </div>
 </template>
@@ -141,7 +149,7 @@ export default{
         background-size: cover;
         display: flex;
         justify-content: space-between;
-        height: 482px;
+        height: calc(482px + 80px);
         padding: 0 15%;
 
         div.menu{
@@ -167,6 +175,32 @@ export default{
             left: 0;
             bottom: 0;
             z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15%;
+
+            button{
+                color: white;
+                text-transform: uppercase;
+                background-color: transparent;
+                padding: 10px;
+                border: 2px solid #1575ee;
+            }
+
+            .social-networks{
+                display: flex;
+                align-items: center;
+
+                h3{
+                    color: #1575ee;
+                    text-transform: uppercase;
+                    padding: 2px;
+                }
+                img{
+                    padding: 0 8px;
+                }
+            }
         }
     }
 </style>
