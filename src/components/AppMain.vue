@@ -8,7 +8,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .black-banner{
         display: flex;
         align-items: center;
