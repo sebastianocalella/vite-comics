@@ -6,7 +6,7 @@
         <ul>
             <li v-for="blueBarElement in blueBarList">
                 <img :src="getImagePath('../assets/images/'+blueBarElement.image)" alt="blallo">
-                {{blueBarElement.text}}
+                <p>{{blueBarElement.text}}</p>
             </li>
         </ul>
     </div>
@@ -78,6 +78,14 @@ export default{
 
         li{
             color: white;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+
+            img{
+                height: 50px;
+                margin-right: 10px;
+            }
         }
     }
 </style>
