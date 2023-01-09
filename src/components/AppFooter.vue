@@ -7,17 +7,20 @@
                     <li v-for="dcComicsItem in dcComicsItems">{{dcComicsItem.text}}</li>
                 </ul>
                 <h2>SHOP DC</h2>
+                <ul>
+                    <li v-for="shopItem in shopItems">{{shopItem.text}}</li>
+                </ul>
             </div>
             <div class="column">
                 <h2>DC</h2>
                 <ul>
-                    <li></li>
+                    <li v-for="dcElement in dcList">{{dcElement.text}}</li>
                 </ul>
             </div>
             <div class="column">
                 <h2>SITES</h2>
                 <ul>
-                    <li></li>
+                    <li v-for="site in sites">{{site.text}}</li>
                 </ul>
             </div>
         </div>
@@ -61,6 +64,66 @@ export default{
                 },
                 {
                     text: "shop"
+                }
+            ],
+            shopItems: [
+                {
+                    text: "Shop DC"
+                },
+                {
+                    text: "Shop DC Collectibles"
+                }
+            ],
+            dcList: [
+                {
+                    text: "Terms Of Use"
+                },
+                {
+                    text: "Privacy policy (New)"
+                },
+                {
+                    text: "Ad Choices"
+                },
+                {
+                    text: "Advertising"
+                },
+                {
+                    text: "Jobs"
+                },
+                {
+                    text: "Subscriptions"
+                },
+                {
+                    text: "Talent Workshops"
+                },
+                {
+                    text: "CPSC Certificates"
+                },
+                {
+                    text: "Ratings"
+                },
+                {
+                    text: "Shop Help"
+                },
+                {
+                    text: "Contact Us"
+                }
+            ],
+            sites: [
+                {
+                    text: "DC"
+                },
+                {
+                    text: "MAD Magazine"
+                },
+                {
+                    text: "DC Kids"
+                },
+                {
+                    text: "DC Universe"
+                },
+                {
+                    text: "DC Power Visa"
                 }
             ]
         }
