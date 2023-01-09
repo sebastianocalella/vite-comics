@@ -1,6 +1,26 @@
 <template lang="">
     <div class="container">
-        <h3>sono un footer</h3>
+        <div class="menu">
+            <div class="column">
+                <h2>DC COMICS</h2>
+                <ul>
+                    <li v-for="dcComicsItem in dcComicsItems">{{dcComicsItem.text}}</li>
+                </ul>
+                <h2>SHOP DC</h2>
+            </div>
+            <div class="column">
+                <h2>DC</h2>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>SITES</h2>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
         <div class="join-us-banner">
 
         </div>
@@ -8,7 +28,44 @@
 </template>
 
 <script>
-
+export default{
+    data() {
+        return{
+            dcComicsItems: [
+                {
+                    text: "characters"
+                },
+                {
+                    text: "comics"
+                },
+                {
+                    text: "movies"
+                },
+                {
+                    text: "tv"
+                },
+                {
+                    text: "games"
+                },
+                {
+                    text: "collectibles"
+                },
+                {
+                    text: "videos"
+                },
+                {
+                    text: "fans"
+                },
+                {
+                    text: "news"
+                },
+                {
+                    text: "shop"
+                }
+            ]
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -18,6 +75,21 @@
         background-size: cover;
         height: 482px;
 
+        div.menu{
+            display: flex;
+            padding: 50px 15%;
+            width: 65%;
+            justify-content: space-between;
+
+            h2{
+                color: white;
+                padding: 12px 0;
+            }
+            li{
+                color: lightslategrey;
+                padding: 1px 0;
+            }
+        }
         .join-us-banner{
             height: 80px;
             width: 100%;
