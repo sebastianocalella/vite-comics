@@ -186,6 +186,17 @@ export default{
                 background-color: transparent;
                 padding: 10px;
                 border: 2px solid #1575ee;
+
+                &:hover{
+                    background-color: #4b4646;
+                    cursor: pointer;
+                }
+
+                &:active{
+                    background-color: #847676;
+                    cursor: pointer;
+                    border: 1px solid #448ee8;
+                }
             }
 
             .social-networks{
