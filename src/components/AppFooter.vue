@@ -24,6 +24,9 @@
                 </ul>
             </div>
         </div>
+
+        <img src="../assets/images/dc-logo-bg.png" alt="">
+
         <div class="join-us-banner">
 
         </div>
@@ -136,13 +139,16 @@ export default{
         background-image: url(../assets/images/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        justify-content: space-between;
         height: 482px;
+        padding: 0 15%;
 
         div.menu{
             display: flex;
-            padding: 50px 15%;
-            width: 65%;
+            width: 42%;
             justify-content: space-between;
+            padding: 25px 0;
 
             h2{
                 color: white;
