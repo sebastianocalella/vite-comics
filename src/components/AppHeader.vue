@@ -3,7 +3,7 @@
         <img src="../assets/images/dc-logo.png" alt="ciao">
         <nav>
             <ul>
-                <li v-for="navBarItem in navBarItems">{{navBarItem.text}}</li>
+                <li v-for="navBarItem in navBarItems" :class="navBarItem.active ? 'active' : ''">{{navBarItem.text}}</li>
             </ul>
         </nav>
     </div>
@@ -15,34 +15,44 @@ export default{
         return{
             navBarItems: [
                 {
-                    text: "characters"
+                    text: "characters",
+                    active: false
                 },
                 {
-                    text: "comics"
+                    text: "comics",
+                    active: true
                 },
                 {
-                    text: "movies"
+                    text: "movies",
+                    active: false
                 },
                 {
-                    text: "tv"
+                    text: "tv",
+                    active: false
                 },
                 {
-                    text: "games"
+                    text: "games",
+                    active: false
                 },
                 {
-                    text: "collectibles"
+                    text: "collectibles",
+                    active: false
                 },
                 {
-                    text: "videos"
+                    text: "videos",
+                    active: false
                 },
                 {
-                    text: "fans"
+                    text: "fans",
+                    active: false
                 },
                 {
-                    text: "news"
+                    text: "news",
+                    active: false
                 },
                 {
-                    text: "shop"
+                    text: "shop",
+                    active: false
                 }
             ]
         }
@@ -55,8 +65,11 @@ export default{
         display: flex;
         width: 70%;
         margin: 0 auto;
-        padding: 30px 0;
         justify-content: space-between;
+
+        img{
+            margin: 15px 0;
+        }
 
         ul{
             display: flex;
@@ -65,7 +78,12 @@ export default{
             li{
                 padding: 0 .4rem;
                 height: 100%;
-                line-height: 6rem;
+                line-height: 8rem;
+            }
+
+            li.active{
+                color: #0282f9;
+                border-bottom: 3px solid #0282f9;
             }
         }
     }
