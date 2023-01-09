@@ -5,7 +5,7 @@
     <div class="blue-banner">
         <ul>
             <li v-for="blueBarElement in blueBarList">
-                <img :src="getImagePath("../assets/images/" + imageName)" alt="blallo">
+                <img :src="getImagePath('../assets/images/'+blueBarElement.image)" alt="blallo">
                 {{blueBarElement.text}}
             </li>
         </ul>
@@ -16,26 +16,25 @@
 export default{
     data() {
         return{
-            imageName: "",
             blueBarList: [
                 {
-                    image: '',
+                    image: 'buy-comics-digital-comics.png',
                     text: 'digital comics'
                 },
                 {
-                    image: '',
+                    image: 'buy-comics-merchandise.png',
                     text: 'dc merchandise'
                 },
                 {
-                    image: '',
+                    image: 'buy-comics-subscriptions.png',
                     text: 'subscription'
                 },
                 {
-                    image: '',
+                    image: 'buy-comics-shop-locator.png',
                     text: 'comic shop locator'
                 },
                 {
-                    image: '',
+                    image: 'buy-dc-power-visa.svg',
                     text: 'dc power visa'
                 }
             ]
