@@ -5,6 +5,7 @@
     <div class="blue-banner">
         <ul>
             <li v-for="blueBarElement in blueBarList">
+                <img :src="getImagePath("../assets/images/" + imageName)" alt="blallo">
                 {{blueBarElement.text}}
             </li>
         </ul>
@@ -15,6 +16,7 @@
 export default{
     data() {
         return{
+            imageName: "",
             blueBarList: [
                 {
                     image: '',
@@ -37,6 +39,11 @@ export default{
                     text: 'dc power visa'
                 }
             ]
+        }
+    },
+    methods: {
+        getImagePath: function(imgPath){
+            return new URL(imgPath, import.meta.url).href;
         }
     }
 }
