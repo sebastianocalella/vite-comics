@@ -61,7 +61,6 @@ export default{
         ul{
             display: flex;
             list-style-type: none;
-            margin: 0;
             height: 100%;
 
             li{

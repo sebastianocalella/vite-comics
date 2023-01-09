@@ -1,6 +1,6 @@
 <template lang="">
-    <div>
-        <h2>sono un main</h2>
+    <div class="black-banner">
+        <h2>Content goes here</h2>
     </div>
 </template>
 
@@ -9,5 +9,17 @@
 </script>
 
 <style lang="scss">
-    
+    .black-banner{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        height: 160px;
+
+        margin: 0 auto;
+
+        h2{
+            color: white;
+            margin-left: 15%;
+        }
+    }
 </style>
