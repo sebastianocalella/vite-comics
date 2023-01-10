@@ -1,5 +1,6 @@
 <template lang="">
     <div class="jumbo">
+        <h3>current series</h3>
     </div>
     <div class="black-banner">
         <div class="comics-container">
@@ -141,6 +142,17 @@ export default {
     height: 250px;
     background-image: url(../assets/images/jumbotron.jpg);
     background-size: cover;
+
+    h3{
+        position: absolute;
+        color: white;
+        text-transform: uppercase;
+        background-color: #0282f9;
+        font-size: .9rem;
+        padding: .6rem .8rem;
+        top: calc(100% - 1rem);
+        left: 12%;
+    }
 }
 .black-banner {
     background-color: black;
