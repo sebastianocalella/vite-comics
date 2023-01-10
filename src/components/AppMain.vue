@@ -10,6 +10,7 @@
                 :series="comic.series"
                 :type="comic.type"/>
         </div>
+        <button>load more</button>
     </div>
     <div class="blue-banner">
         <ul>
@@ -172,7 +173,18 @@ export default {
         color: white;
         margin-left: 15%;
     }
+
+    button{
+        display: block;
+        color: white;
+        background-color: #0282f9;
+        padding: .5rem 3rem;
+        text-transform: uppercase;
+        border: none;
+        margin: 3rem auto 0;
+    }
 }
+
 
 .blue-banner {
     display: flex;
