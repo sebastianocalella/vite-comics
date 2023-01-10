@@ -28,11 +28,6 @@ export default{
 
 </template>
 
-<style>
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-  }
+<style lang="scss">
+@use './styles/general.scss' as *;
 </style>
