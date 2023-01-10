@@ -61,6 +61,8 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+
+    @use '../styles/partials/variables' as *;
     .container{
         display: flex;
         width: 70%;
@@ -79,11 +81,12 @@ export default{
                 padding: 0 .4rem;
                 height: 100%;
                 line-height: 8rem;
+                text-transform: uppercase;
             }
 
             li.active{
-                color: #0282f9;
-                border-bottom: 3px solid #0282f9;
+                color: $main-color;
+                border-bottom: 3px solid $main-color;
             }
         }
     }

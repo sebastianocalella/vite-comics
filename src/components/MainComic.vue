@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@use '../styles/partials/variables' as *;
     .container{
         width: calc(100%/6 - 15px);
 
@@ -27,6 +29,6 @@ export default {
         }
     }
     p{
-        color: white;
+        color: $main-accent;
     }
 </style>

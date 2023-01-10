@@ -138,6 +138,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@use '../styles/partials/variables' as *;
 .jumbo{
     position: relative;
     height: 250px;
@@ -146,9 +148,9 @@ export default {
 
     h3{
         position: absolute;
-        color: white;
+        color: $main-accent;
         text-transform: uppercase;
-        background-color: #0282f9;
+        background-color: $main-color;
         font-size: .9rem;
         padding: .6rem .8rem;
         top: calc(100% - 1rem);
@@ -156,7 +158,7 @@ export default {
     }
 }
 .black-banner {
-    background-color: black;
+    background-color: $main-dark-color;
     padding: 4rem 0;
     margin: 0 auto;
 
@@ -170,14 +172,14 @@ export default {
     }
 
     h2 {
-        color: white;
+        color: $main-accent;
         margin-left: 15%;
     }
 
     button{
         display: block;
-        color: white;
-        background-color: #0282f9;
+        color: $main-accent;
+        background-color: $main-color;
         padding: .5rem 3rem;
         text-transform: uppercase;
         border: none;
@@ -190,7 +192,7 @@ export default {
     display: flex;
     align-items: center;
     height: 180px;
-    background-color: #0282f9;
+    background-color: $main-color;
     padding: 0 15%;
 
     ul {
@@ -200,7 +202,7 @@ export default {
     }
 
     li {
-        color: white;
+        color: w$main-accent;
         display: flex;
         align-items: center;
         text-transform: uppercase;

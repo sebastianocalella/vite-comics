@@ -144,6 +144,8 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+
+@use '../styles/partials/variables' as *;
     .container{
         background-image: url(../assets/images/footer-bg.jpg);
         background-repeat: no-repeat;
@@ -171,7 +173,7 @@ export default{
         .join-us-banner{
             height: 80px;
             width: 100%;
-            background-color: #303030;
+            background-color: $footer-gray-bg;
             position: fixed;
             left: 0;
             bottom: 0;
@@ -182,11 +184,11 @@ export default{
             padding: 0 15%;
 
             button{
-                color: white;
+                color: $main-accent;
                 text-transform: uppercase;
                 background-color: transparent;
                 padding: 10px;
-                border: 2px solid #1575ee;
+                border: 2px solid $main-color;
 
                 &:hover{
                     background-color: #4b4646;
@@ -205,7 +207,7 @@ export default{
                 align-items: center;
 
                 h3{
-                    color: #1575ee;
+                    color: $main-color;
                     text-transform: uppercase;
                     padding: 2px;
                 }
