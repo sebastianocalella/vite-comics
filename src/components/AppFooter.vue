@@ -25,7 +25,9 @@
             </div>
         </div>
 
-        <img src="../assets/images/dc-logo-bg.png" alt="dc-logo">
+        <div class="img-wrapper">
+            <img src="../assets/images/dc-logo-bg.png" alt="dc-logo">
+        </div>
 
         <div class="join-us-banner">
             <button>sign-up now!</button>
@@ -165,12 +167,19 @@ export default{
             h2{
                 color: white;
                 padding: 12px 0;
+                font-size: 1.8rem;
             }
             li{
                 color: lightslategrey;
                 padding: 1px 0;
+                font-size: 1rem;
             }
         }
+        div.img-wrapper{
+                img{
+                    height: 100%;
+                }
+            }
         .join-us-banner{
             height: 80px;
             width: 100%;
