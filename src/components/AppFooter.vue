@@ -163,6 +163,7 @@ export default{
             justify-content: space-between;
             padding: 25px 0;
             min-width: 450px;
+            margin-top: 75px;
 
             h2{
                 color: white;

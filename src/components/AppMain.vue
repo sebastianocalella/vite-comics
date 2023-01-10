@@ -178,7 +178,7 @@ export default {
             padding: .5rem 3rem;
             text-transform: uppercase;
             border: none;
-            margin: 3rem auto 0;
+            margin: 3rem auto 75px;
         }
     }
 
@@ -192,9 +192,13 @@ export default {
 
 .blue-banner {
     display: flex;
+    width: 100%;
     align-items: center;
-    height: 180px;
+    height: 150px;
     background-color: $main-color;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 75px);
 
     ul {
         width: 70%;
