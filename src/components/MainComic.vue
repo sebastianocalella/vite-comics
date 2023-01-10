@@ -1,6 +1,9 @@
 <template>
-    <div>
-        <h2>ciao</h2>
+    <div class="container">
+        <div class="img-wrapper">
+            <img :src="thumb" :alt="series + ' icon'">
+        </div>
+        <p>{{ series }}</p>
     </div>
 </template>
 
@@ -16,7 +19,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    h2{
+    .container{
+        width: calc(100%/6 - 15px);
+
+        .img-wrapper img{
+            width: 100%;
+        }
+    }
+    p{
         color: white;
     }
 </style>

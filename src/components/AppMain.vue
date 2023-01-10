@@ -1,6 +1,12 @@
 <template lang="">
     <div class="black-banner">
-        <MainComic />
+        <div class="comics-container">
+            <MainComic v-for="comic in comics"
+                :thumb="comic.thumb"
+                :price="comic.price"
+                :series="comic.series"
+                :type="comic.type"/>
+        </div>
     </div>
     <div class="blue-banner">
         <ul>
@@ -129,11 +135,18 @@ export default {
 
 <style lang="scss" scoped>
 .black-banner {
-    display: flex;
-    align-items: center;
     background-color: black;
     padding: 4rem 0;
     margin: 0 auto;
+
+    div.comics-container{
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     h2 {
         color: white;
