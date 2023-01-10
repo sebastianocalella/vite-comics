@@ -1,6 +1,6 @@
 <template lang="">
     <div class="black-banner">
-        <h2>Content goes here</h2>
+        <MainComic />
     </div>
     <div class="blue-banner">
         <ul>
@@ -13,7 +13,12 @@
 </template>
 
 <script>
+import MainComic from './MainComic.vue';
+
 export default {
+    components:{
+        MainComic
+    },
     data() {
         return {
             blueBarList: [
