@@ -179,6 +179,16 @@ export default {
             text-transform: uppercase;
             border: none;
             margin: 3rem auto 75px;
+
+            &:hover{
+                cursor: pointer;
+                background-color: $main-color-hover;
+            }
+
+            &:active{
+                cursor: pointer;
+                background-color: $main-color-active;
+            }
         }
     }
 
@@ -218,6 +228,10 @@ export default {
         img {
             height: 50px;
             margin-right: 10px;
+        }
+
+        &:hover{
+            cursor: pointer;
         }
     }
 }

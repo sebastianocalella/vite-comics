@@ -71,6 +71,9 @@ export default{
 
         img{
             margin: 15px 0;
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         ul{
@@ -84,6 +87,12 @@ export default{
                 text-transform: uppercase;
                 font-size: .8rem;
                 font-weight: 700;
+                transition: .5s;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: $main-accent-hover;
+                }
             }
 
             li.active{

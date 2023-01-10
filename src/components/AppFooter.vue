@@ -171,9 +171,15 @@ export default{
                 font-size: 1.8rem;
             }
             li{
-                color: lightslategrey;
+                color: $text-gray;
                 padding: 1px 0;
                 font-size: 1rem;
+
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: $text-light-gray;
+                }
             }
         }
         div.img-wrapper{
