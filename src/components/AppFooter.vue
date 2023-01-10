@@ -160,6 +160,7 @@ export default{
             width: 42%;
             justify-content: space-between;
             padding: 25px 0;
+            min-width: 450px;
 
             h2{
                 color: white;
@@ -181,7 +182,8 @@ export default{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 15%;
+            padding: 0 100px;
+            min-width: 950px;
 
             button{
                 color: $main-accent;

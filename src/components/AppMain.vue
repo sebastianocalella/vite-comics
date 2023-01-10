@@ -9,8 +9,8 @@
                 :price="comic.price"
                 :series="comic.series"
                 :type="comic.type"/>
+                <button>load more</button>
         </div>
-        <button>load more</button>
     </div>
     <div class="blue-banner">
         <ul>
@@ -169,6 +169,17 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        min-width: 950px;
+        
+        button{
+            display: block;
+            color: $main-accent;
+            background-color: $main-color;
+            padding: .5rem 3rem;
+            text-transform: uppercase;
+            border: none;
+            margin: 3rem auto 0;
+        }
     }
 
     h2 {
@@ -176,15 +187,6 @@ export default {
         margin-left: 15%;
     }
 
-    button{
-        display: block;
-        color: $main-accent;
-        background-color: $main-color;
-        padding: .5rem 3rem;
-        text-transform: uppercase;
-        border: none;
-        margin: 3rem auto 0;
-    }
 }
 
 
@@ -193,19 +195,21 @@ export default {
     align-items: center;
     height: 180px;
     background-color: $main-color;
-    padding: 0 15%;
 
     ul {
-        width: 100%;
+        width: 70%;
         display: flex;
         justify-content: space-around;
+        min-width: 950px;
+        margin: 0 auto;
     }
 
     li {
-        color: w$main-accent;
+        color: $main-accent;
         display: flex;
         align-items: center;
         text-transform: uppercase;
+        font-size: .7rem;
 
         img {
             height: 50px;

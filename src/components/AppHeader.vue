@@ -78,10 +78,12 @@ export default{
             height: 100%;
 
             li{
-                padding: 0 .4rem;
+                padding: 0 .5rem;
                 height: 100%;
                 line-height: 8rem;
                 text-transform: uppercase;
+                font-size: .8rem;
+                font-weight: 700;
             }
 
             li.active{
