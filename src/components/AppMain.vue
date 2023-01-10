@@ -1,4 +1,6 @@
 <template lang="">
+    <div class="jumbo">
+    </div>
     <div class="black-banner">
         <div class="comics-container">
             <MainComic v-for="comic in comics"
@@ -134,6 +136,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.jumbo{
+    position: relative;
+    height: 250px;
+    background-image: url(../assets/images/jumbotron.jpg);
+    background-size: cover;
+}
 .black-banner {
     background-color: black;
     padding: 4rem 0;
