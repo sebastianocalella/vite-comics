@@ -15,7 +15,7 @@
     <div class="blue-banner">
         <ul>
             <li v-for="blueBarElement in blueBarList">
-                <img :src="getImagePath('../assets/images/'+blueBarElement.imagePath)" alt="blallo">
+                <img :src="getImagePath(blueBarElement.imagePath)" alt="blallo">
                 <p>{{blueBarElement.text}}</p>
             </li>
         </ul>
@@ -131,7 +131,7 @@ export default {
     },
     methods: {
         getImagePath: function (imgPath) {
-            return new URL(imgPath, import.meta.url).href;
+            return new URL('../assets/images/'+imgPath, import.meta.url).href;
         }
     }
 }
